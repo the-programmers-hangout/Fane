@@ -1,6 +1,5 @@
 package fane.services
 
-
 import com.jagrosh.jdautilities.command.{CommandClient, CommandClientBuilder}
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter
 import fane.commands.utility._

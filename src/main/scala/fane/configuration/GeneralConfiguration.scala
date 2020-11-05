@@ -1,8 +1,8 @@
 package fane.configuration
 
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.ListBuffer
 
-case class GeneralConfiguration(guilds: ArrayBuffer[GuildConfiguration] = ArrayBuffer[GuildConfiguration](),
+case class GeneralConfiguration(guilds: ListBuffer[GuildConfiguration] = ListBuffer[GuildConfiguration](),
                                  total_commands_executed: Int = 0)
 
 case class GuildConfiguration(guildId: String = "",
