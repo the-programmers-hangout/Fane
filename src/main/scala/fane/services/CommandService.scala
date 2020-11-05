@@ -3,7 +3,7 @@ package fane.services
 
 import com.jagrosh.jdautilities.command.{CommandClient, CommandClientBuilder}
 import com.jagrosh.jdautilities.commons.waiter.EventWaiter
-import fane.commands.utility.Ping
+import fane.commands.utility._
 import fane.configuration.BotConfiguration
 
 object CommandService {
@@ -17,7 +17,8 @@ object CommandService {
     setPrefix(config.prefix).
     setOwnerId(config.owner_id).
     addCommands(
-      Ping
+      Ping,
+      About
     ).
     build()
 }
