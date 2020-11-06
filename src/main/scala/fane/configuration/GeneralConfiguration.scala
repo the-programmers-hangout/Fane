@@ -7,5 +7,5 @@ case class GeneralConfiguration(guilds: ListBuffer[GuildConfiguration] = ListBuf
 
 case class GuildConfiguration(guildId: String = "",
                               prefix: String = "fane!",
-                              logging_channel: String = "",
+                              logging_channel: String = "logging",
                               total_commands_executed: Int = 0)
